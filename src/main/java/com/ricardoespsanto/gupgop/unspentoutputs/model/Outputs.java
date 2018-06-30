@@ -1,4 +1,4 @@
-package com.ricardoespsanto.gupgop.model;
+package com.ricardoespsanto.gupgop.unspentoutputs.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -11,8 +11,6 @@ import lombok.Value;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Outputs {
 
-  // This field is actually used and accessible via Lombok
-  @SuppressWarnings("unused")
   @JsonProperty("outputs")
   @JsonAlias("unspent_outputs")
   private Collection<UnspentOutput> unspentOutputs;
