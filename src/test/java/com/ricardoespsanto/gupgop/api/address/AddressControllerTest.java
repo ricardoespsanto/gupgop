@@ -1,8 +1,3 @@
-/*
- * (c) Copyright Reserved EVRYTHNG Limited 2017. All rights reserved.
- * Use of this material is subject to license.
- * Copying and unauthorised use of this material strictly prohibited.
- */
 package com.ricardoespsanto.gupgop.api.address;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -24,6 +19,12 @@ public class AddressControllerTest {
 
   @Autowired private MockMvc mockMvc;
 
+  /**
+   * This test ensures that given an invalid request the application will still return a valid,
+   * empty outputs.
+   *
+   * @throws Exception if anything goes wrong while performing the request
+   */
   @Test
   public void shouldReturnDefaultMessage() throws Exception {
     String emptyOutputs = "{\n" + "  \"outputs\" : [ ]\n" + "}";

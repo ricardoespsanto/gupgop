@@ -1,8 +1,3 @@
-/*
- * (c) Copyright Reserved EVRYTHNG Limited 2017. All rights reserved.
- * Use of this material is subject to license.
- * Copying and unauthorised use of this material strictly prohibited.
- */
 package com.ricardoespsanto.gupgop;
 
 import java.util.Collections;
@@ -16,6 +11,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+/** This classes main purpose is to configure swagger as the documentation tool for our API */
 @Configuration
 @EnableSwagger2
 public class DocumentationConfiguration {

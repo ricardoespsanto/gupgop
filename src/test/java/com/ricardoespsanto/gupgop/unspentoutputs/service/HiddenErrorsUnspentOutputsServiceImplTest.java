@@ -18,15 +18,12 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.web.client.RestTemplate;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(AddressController.class)
 public class HiddenErrorsUnspentOutputsServiceImplTest {
 
   @Autowired private MockMvc mockMvc;
-
-  @MockBean private RestTemplate restTemplate;
 
   @MockBean private UnspentOutputsService unspentOutputsService;
 

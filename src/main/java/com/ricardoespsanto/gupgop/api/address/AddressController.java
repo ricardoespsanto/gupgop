@@ -25,6 +25,12 @@ public class AddressController {
     this.unspentOutputsService = unspentOutputsService;
   }
 
+  /**
+   * Retrieve all unspent outputs for a given address
+   *
+   * @param address The address for which to get the transactions
+   * @return all unspent outputs with a 200 status code
+   */
   @ApiOperation(
       httpMethod = "GET",
       value = "Retrieve unspent outputs",

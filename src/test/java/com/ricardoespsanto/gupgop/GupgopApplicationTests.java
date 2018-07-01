@@ -11,6 +11,7 @@ public class GupgopApplicationTests {
 
 	@Test
 	public void contextLoads() {
+		// This test will succeed if the context loads
 	}
 
 }
